@@ -3,7 +3,7 @@
 ### 1. Enable Experimental Features
 Add below line to `/etc/nix/nix.conf`
 ```
-expermental-features = nix-command flakes
+experimental-features = nix-command flakes
 ```
 
 ---
