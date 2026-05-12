@@ -1,0 +1,95 @@
+format = """
+$directory\
+$git_branch\
+$git_status\
+$fill\
+$python\
+$lua\
+$nodejs\
+$golang\
+$haskell\
+$rust\
+$ruby\
+$package\
+$aws\
+$docker_context\
+$jobs\
+$cmd_duration\
+$line_break\
+$character"""
+
+add_newline = true
+palette = 'gruvbox_material'
+
+[directory]
+style = 'bold orange'
+format = '[$path ]($style)'
+truncation_length = 3
+truncation_symbol = '…/'
+truncate_to_repo = false
+
+[character]
+success_symbol = '[ ](bold green)'
+error_symbol = '[ ](bold red)'
+
+[directory.substitutions]
+'Documents' = '󰈙'
+'Downloads' = ' '
+'Music' = ' '
+'Pictures' = ' '
+
+[git_branch]
+symbol = ' '
+style = 'fg:gray'
+format = '[on]($style) [$symbol$branch ](bold blue)'
+
+[git_status]
+style = 'fg:bold red'
+format = '([$all_status$ahead_behind]($style) )'
+
+[fill]
+symbol = ' '
+
+[python]
+style = 'teal'
+symbol = ' '
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+pyenv_version_name = true
+pyenv_prefix = ''
+
+[lua]
+symbol = ' '
+
+[nodejs]
+style = 'blue'
+symbol = ' '
+
+[rust]
+style = 'orange'
+symbol = ' '
+
+[package]
+symbol = '󰏗 '
+
+[jobs]
+symbol = ' '
+style = 'red'
+number_threshold = 1
+format = '[$symbol]($style)'
+
+[cmd_duration]
+min_time = 500
+style = 'italic fg:yellow'
+format = 'took [$duration]($style)'
+
+[palettes.gruvbox_material]
+bg0 = "#141415"
+fg0 = "#CDCDCD"
+red = "#D8647E"
+green = "#7FA563"
+yellow = "#F3bE7C"
+blue = "#6E94B2"
+purple = "#90A0B5"
+aqua = "#B4D4CF"
+orange = "#E8B589"
+gray = "#878787"
