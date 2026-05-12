@@ -14,7 +14,7 @@ nix run github:nix-community/home-manager -- switch --flake .#<username>@linux-x
 
 ---
 
-### Apply
+### 3. Apply
 Example: if on another Linux distro, (Refer `homeConfigurations = {};` in `flake.nix`)
 ```
 home-manager switch --flake .#<username>@linux-x86
