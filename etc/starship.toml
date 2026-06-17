@@ -19,10 +19,10 @@ $line_break\
 $character"""
 
 add_newline = true
-palette = 'gruvbox_material'
+palette = 'ember'
 
 [directory]
-style = 'bold orange'
+style = 'bold red'
 format = '[$path ]($style)'
 truncation_length = 3
 truncation_symbol = '…/'
@@ -30,7 +30,7 @@ truncate_to_repo = false
 
 [character]
 success_symbol = '[ ](bold green)'
-error_symbol = '[ ](bold red)'
+error_symbol = '[ ](bold rose)'
 
 [directory.substitutions]
 'Documents' = '󰈙'
@@ -44,14 +44,14 @@ style = 'fg:gray'
 format = '[on]($style) [$symbol$branch ](bold blue)'
 
 [git_status]
-style = 'fg:bold red'
+style = 'fg:bold rose'
 format = '([$all_status$ahead_behind]($style) )'
 
 [fill]
 symbol = ' '
 
 [python]
-style = 'teal'
+style = 'yellow'
 symbol = ' '
 format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 pyenv_version_name = true
@@ -61,7 +61,7 @@ pyenv_prefix = ''
 symbol = ' '
 
 [nodejs]
-style = 'blue'
+style = 'green'
 symbol = ' '
 
 [rust]
@@ -73,7 +73,7 @@ symbol = '󰏗 '
 
 [jobs]
 symbol = ' '
-style = 'red'
+style = 'rose'
 number_threshold = 1
 format = '[$symbol]($style)'
 
@@ -82,14 +82,15 @@ min_time = 500
 style = 'italic fg:yellow'
 format = 'took [$duration]($style)'
 
-[palettes.gruvbox_material]
-bg0 = "#141415"
-fg0 = "#CDCDCD"
-red = "#D8647E"
-green = "#7FA563"
-yellow = "#F3bE7C"
-blue = "#6E94B2"
-purple = "#90A0B5"
-aqua = "#B4D4CF"
-orange = "#E8B589"
-gray = "#878787"
+[palettes.ember]
+bg0    = "#1c1b19"
+fg0    = "#d8d0c0"
+red    = "#e08060"
+green  = "#8a9868"
+yellow = "#c8b468"
+blue   = "#7890a0"
+purple = "#988090"
+aqua   = "#80a090"
+orange = "#c09058"
+gray   = "#706c61"
+rose   = "#b07878"

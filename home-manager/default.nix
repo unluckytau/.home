@@ -1,4 +1,4 @@
-{ config, pkgs, lib, username, inputs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
 	imports = [
@@ -6,10 +6,6 @@
 		./bash.nix
 		./zathura.nix
 	];
-	
-	home.username = username;
-	home.homeDirectory = if pkgs.stdenv.isDarwin then "/Users/${username}" else "/home/${username}";
-	home.stateVersion = "25.11";
 
 	programs.kitty = {
 		enable = true;
@@ -34,9 +30,11 @@
 			cursor_trail = "200";
 			cursor_trail_decay = "0.1 0.4";
 			cursor_trail_start_threshold = "2";
-			enabled_layouts = "tall:bias=50;full_size=1;mirrored=false";
 		};
 		shellIntegration.mode = "no-cursor";
+		extraConfig = ''
+			include ${../etc/ember.conf}
+		'';
 	};
 
 	programs.starship = {
@@ -44,5 +42,4 @@
 		enableBashIntegration = true;
 	};
 	xdg.configFile."starship.toml".source = ../etc/starship.toml;
-
 }

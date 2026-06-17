@@ -1,31 +1,36 @@
-set default-bg                  "#141415"
-set default-fg                  "#cdcdcd"
+set default-bg                  "#1c1b19"
+set default-fg                  "#d8d0c0"
 
-set statusbar-fg                "#cdcdcd"
-set statusbar-bg                "#252530"
+set statusbar-bg                "#1c1b19"
+set statusbar-fg                "#b0a898"
 
-set inputbar-bg                 "#252530"
-set inputbar-fg                 "#aeaed1"
+set inputbar-bg                 "#252422"
+set inputbar-fg                 "#d8d0c0"
 
-set notification-bg             "#cdcdcd"
-set notification-fg             "#141415"
+set notification-bg             "#252422"
+set notification-fg             "#d8d0c0"
 
-set notification-error-bg       "#d8647e"
-set notification-error-fg       "#141415"
+set notification-error-bg       "#b07878"
+set notification-error-fg       "#1c1b19"
 
-set notification-warning-bg     "#f3be7c"
-set notification-warning-fg     "#141415"
+set notification-warning-bg     "#c8b468"
+set notification-warning-fg     "#1c1b19"
 
-set highlight-color             "rgba(187, 157, 189, 0.5)"
-set highlight-active-color      "rgba(126, 152, 232, 0.5)"
+# Search highlights (Coral hero accent and Gold active accent)
+set highlight-color             "rgba(224, 128, 96, 0.5)"
+set highlight-active-color      "rgba(200, 180, 104, 0.5)"
 
-set completion-bg               "#252530"
-set completion-fg               "#aeaed1"
+set completion-bg               "#252422"
+set completion-fg               "#d8d0c0"
 
-set completion-highlight-fg     "#141415"
-set completion-highlight-bg     "#aeaed1"
+set completion-highlight-bg     "#3e3c38"
+set completion-highlight-fg     "#d8d0c0"
 
+# PDF Recoloring (Maps pages to warm graphite and soft parchment)
 set recolor                     "true"
-set recolor-lightcolor          "#141415"
-set recolor-darkcolor           "#cdcdcd"
+set recolor-lightcolor          "#1c1b19"
+set recolor-darkcolor           "#d8d0c0"
 set recolor-keephue             "true"
+
+# Mappings
+set selection-clipboard clipboard
