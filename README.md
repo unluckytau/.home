@@ -1,4 +1,4 @@
-# <p align="center"> `__Nix Home-manager 🏠__` </p>
+# <p align="center"> `Nix Home-manager 🏠` </p>
 
 ### 1. Enable Experimental Features
 Add below line to `/etc/nix/nix.conf`
